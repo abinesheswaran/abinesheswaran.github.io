@@ -1,67 +1,96 @@
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
 }
 
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-}
-
-h1, h2, h3 {
-    color: #222;
-}
-
-/* Header */
 header {
+    background: #0078ff;
+    color: white;
     text-align: center;
     padding: 40px 20px;
-    background: #007acc;
-    color: white;
 }
 
-/* Sections */
-.section {
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #0078ff;
+    border-bottom: 3px solid #0078ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+section {
+    max-width: 900px;
+    margin: 40px auto;
     background: white;
     padding: 20px;
-    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.stack-card {
+    background: #0078ff;
+    color: white;
+    padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Tech Stack */
-.tech-icons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
+.exp-card ul {
+    list-style: none;
+    padding: 0;
 }
 
-.tech-icons img {
-    height: 30px;
+.exp-card li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Links */
-a {
-    color: #007acc;
+.achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
+.achievements li {
+    background: #fff3cd;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffcc00;
     text-decoration: none;
     font-weight: bold;
 }
 
-a:hover {
+footer a:hover {
     text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #222;
-    color: white;
-    margin-top: 20px;
 }
